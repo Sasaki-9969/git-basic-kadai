@@ -1,0 +1,38 @@
+PS C:\Users\ncnxj\OneDrive\Documents> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\ncnxj\OneDrive\Documents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/06/22     23:07                git_challenge
+
+
+PS C:\Users\ncnxj\OneDrive\Documents> cd git_challenge
+PS C:\Users\ncnxj\OneDrive\Documents\git_challenge> git init
+Initialized empty Git repository in C:/Users/ncnxj/OneDrive/Documents/git_challenge/.git/
+PS C:\Users\ncnxj\OneDrive\Documents\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\ncnxj\OneDrive\Documents\git_challenge> git add hello_world.txt
+PS C:\Users\ncnxj\OneDrive\Documents\git_challenge> git commit -m "1回目のコミット"
+[main (root-commit) 22934c6] 1回目のコミット
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\ncnxj\OneDrive\Documents\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\ncnxj\OneDrive\Documents\git_challenge> git add hello_world.txt
+PS C:\Users\ncnxj\OneDrive\Documents\git_challenge> git commit -m "2回目のコミット"
+[main 3f0c094] 2回目のコミット
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\ncnxj\OneDrive\Documents\git_challenge> git log
+commit 3f0c0946111df0aaac003f230001ae1070190603 (HEAD -> main)
+Author: Sasaki-9969 <minihito12@gmail.com>
+Date:   Sun Jun 22 23:28:59 2025 +0900
+
+    2回目のコミット
+
+commit 22934c6f0166a5ac053916da8de417f0d85bf22b
+Author: Sasaki-9969 <minihito12@gmail.com>
+Date:   Sun Jun 22 23:21:19 2025 +0900
+
+    1回目のコミット
+    
